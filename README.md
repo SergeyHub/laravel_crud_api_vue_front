@@ -1,4 +1,6 @@
+
 ####1. Install Vue Temlate
+  
 `npm install -g @vue/cli`  
 `vue create .`  
 
@@ -7,11 +9,11 @@
 `npm run build`     
 `npm run serve`   
 
-git init  
-git add .  
-git commit –m "Comment"  
-git remote add origin https://github.com/SergeyHub/laravel_crud_api_vue_front.git    
-git push -u origin master  
+`git init`  
+`git add .`  
+`git commit –m "Comment"`  
+`git remote add origin https://github.com/SergeyHub/laravel_crud_api_vue_front.git`    
+`git push -u origin master`  
 
 
 # laravel_crud_api_vue_front
