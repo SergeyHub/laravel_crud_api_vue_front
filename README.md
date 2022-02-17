@@ -1,5 +1,5 @@
 
-####1. Install Vue Temlate
+#### 1. Install Vue Temlate
   
 `npm install -g @vue/cli`  
 `vue create .`  
