@@ -1,10 +1,7 @@
-<<<<<<< HEAD
-### laravel_crud_api_vue_front
-##### 1. Install Vue Template
-=======
 
-#### 1. Install Vue Temlate
->>>>>>> e0276025d15a0a0cd22cfac60855fe461c493e40
+### laravel_crud_api_vue_front
+
+##### 1. Install Vue Template
   
 `npm install -g @vue/cli`  
 `vue create .`  
