@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>Hello</h1>
+    <h1>Add Contact</h1>
   </div>
   <Header/>
   <router-vi></router-vi>
