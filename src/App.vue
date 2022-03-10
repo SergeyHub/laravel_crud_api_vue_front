@@ -1,8 +1,5 @@
 <template>
-  <div>
-    <h1>Hello</h1>
-  </div>
-  <Header/>
+  <Header title="Front / Full Stack Vue.js 3 & Laravel CRUD with RESTFUL API"/>
   <router-vi></router-vi>
 </template>
 
