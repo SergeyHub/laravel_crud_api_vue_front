@@ -1,10 +1,11 @@
-import {createRouter, createWebHistory }  from 'vue-router';
+import { createWebHistory, createRouter } from "vue-router"
 
-import ContactList from '@/components/ContactList';
-import AddContact from '@/components/AddContact';
+import Home from "@/views/Home.vue"
+//import ContactList from "../components/ContactList";
+//import AddContact from "../components/AddContact";
 
 const routes = [
-    {
+    /*{
         name: 'ContactList',
         path: '/',
         component: ContactList
@@ -13,6 +14,11 @@ const routes = [
         name: 'AddContact',
         path: '/add_contacts',
         component: AddContact
+    },*/
+    {
+        path: "/",
+        name: "Home",
+        component: Home,
     },
 ];
 

@@ -1,7 +1,7 @@
 <template>
   <Header title="Front / Full Stack Vue.js 3 & Laravel CRUD with RESTFUL API"/>
-  <router-vi></router-vi>
-</template>
+    <router-view />
+ </template>
 
 <script>
   import Header from './components/Header.vue'
@@ -11,7 +11,6 @@
       Header
     }
   }
-
 </script>
 
 <style>

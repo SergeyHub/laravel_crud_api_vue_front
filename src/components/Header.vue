@@ -12,12 +12,12 @@
       <div class="collapse navbar-collapse" id="navbarColor01">
         <ul class="navbar-nav me-auto">
           <li class="nav-item">
-            <router-link class="nav-link active" to="#">Home
+            <router-link class="nav-link active" to="/">Home
               <span class="visually-hidden">(current)</span>
             </router-link>
           </li>
           <li class="nav-item">
-            <router-link class="nav-link" to="#">Add Contact</router-link>
+            <router-link class="nav-link" to="add_contacts">Add Contact</router-link>
           </li>
         </ul>
        </div>
