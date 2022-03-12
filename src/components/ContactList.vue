@@ -1,12 +1,58 @@
 <template>
  <div>
-   <h1>Contact List</h1>
+   <h1 style="margin-left: 50px">Contact List</h1>
  </div>
+    <div class="container">
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th scope="col">№</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Destignation</th>
+                    <th scope="col">Contact No.</th>
+                </tr>
+            </thead>
+            <tbody v-for="contact in contacts" :key="contact.id">
+                <tr class="table-secondary">
+                    <th scope="row">{{ contact.id }}</th>
+                    <th scope="row">{{ contact.name }}</th>
+                    <th scope="row">{{ contact.email }}</th>
+                    <th scope="row">{{ contact.destignation }}</th>
+                    <th scope="row">{{ contact.contact_no}}</th>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 </template>
 
 <script>
+  import axios from 'axios';
+
   export default {
-    name: 'ContactList'
+    name: 'ContactList',
+      data() {
+        return {
+            contacts : Array
+        }
+      },
+      created() {
+        this.getContacts();
+      },
+      methods: {
+        async getContacts() {
+            let url = 'http://127.0.0.1:8000/api/contacts';
+            await axios.get(url).then(response => {
+                this.contacts = response.data.contacts;
+                console.log(this.contacts);
+            }).catch(error => {
+                console.log(error);
+            });
+        }
+      },
+      mounted() {
+        console.log('Contact List Component mounted');
+      }
 
   }
 </script>
