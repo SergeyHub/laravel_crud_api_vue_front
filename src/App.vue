@@ -1,5 +1,5 @@
 <template>
-  <Header title="Front / Full Stack Vue.js 3 & Laravel CRUD with RESTFUL API"/>
+  <Header title="Front RESTFUL API"/>
     <router-view />
  </template>
 
