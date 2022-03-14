@@ -28,7 +28,7 @@
                         <div class="form-group">
                             <label class="form-label mt-4">Designation</label>
                             <input type="text" class="form-control" v-model="contact.designation"
-                                   placeholder="Enter Designation">
+                                   placeholder="Enter designation">
                         </div>
                         <div class="form-group">
                             <label class="form-label mt-4">Enter Contact No</label>
@@ -67,7 +67,7 @@ import axios from 'axios';
                     this.errors.push("Email is required")
                 }
                 if(!this.contact.designation) {
-                    this.errors.push("Designation is required")
+                    this.errors.push("designation is required")
                 }
                 if(!this.contact.contact_no) {
                     this.errors.push("Contact No. is required")
@@ -78,7 +78,7 @@ import axios from 'axios';
                     formData.append('email', this.contact.email);
                     formData.append('designation', this.contact.designation);
                     formData.append('contact_no', this.contact.contact_no);
-                    let url ='http://127.0.0.1:8000/api/save_contact';
+                    let url ='http://127.0.0.1:8000/api/add_contact';
                     await axios.post(url, formData).then((response) => {
                         console.log(response);
                         if(response.status == 200 ) {

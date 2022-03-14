@@ -102,3 +102,5 @@ DB_PASSWORD=123456
 - [How To Navigate Between Views with Vue Router](https://www.digitalocean.com/community/tutorials/how-to-navigate-between-views-with-vue-router).
 
 #### npm i axios view conact list http://127.0.0.1:8000/api/contacts
+
+####  Delete method ContactList.vue
