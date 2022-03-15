@@ -104,3 +104,5 @@ DB_PASSWORD=123456
 #### npm i axios view conact list http://127.0.0.1:8000/api/contacts
 
 ####  Delete method ContactList.vue
+####  Edit method ContactList.vue EditContact.vue
+#### update method 

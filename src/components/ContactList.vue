@@ -26,7 +26,12 @@
                             Delete
                         </button>
                     </th>
-                    <th scope="row"><button class="btn btn-success btn-sm">Edit</button></th>
+                    <th scope="row">
+                        <router-link :to="{ name:'EditContact', params: { id: contact.id} }"
+                                     class="btn btn-primary btn-sm">
+                            Edit
+                        </router-link>
+                    </th>
                 </tr>
             </tbody>
         </table>
